@@ -57,7 +57,7 @@ machines using configuration management.
 
 -   Worker4: Docker, Kubernetes.\
     ![img1](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image1.JPG)
-    ![img2](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image2.JPG)
+    ![img2](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image2.jpg)
 
 Solution:
 
@@ -66,12 +66,12 @@ Solution:
 
 -   Login to AWS and create a Ubuntu instance.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image3.PNG)
+![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image3.PNG)
 
 -   Create and logon to this instance inside this we will be installing
     terraform.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image4.png)
+![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image4.png)
 
 -   Run the following command to create a Terraform script file.
 
@@ -84,9 +84,9 @@ run it
 
 vi terra_install.sh
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image5.png)
+![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image5.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image6.png)
+![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image6.png)
 
 -   Add the following script.
 
@@ -116,16 +116,16 @@ sudo apt update -y
 
 sudo apt-get install terraform -y
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image7.png)
+![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image7.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image8.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image8.png)
 
 -   We will run this file to install terraform.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image9.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image9.png)
 -   Let\'s wait for this to install.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image10.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image10.png)
 
 -   Now we will write a tf file to generate the ec2 machines for our k8s
     master and slaves.
@@ -188,12 +188,12 @@ Name = \"kub1-master\"
 
 }
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image11.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image11.png)
 
 -   We will attach a role to the controller ec2 instance with the
     permission of power user.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image12.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image12.png)
 
 -   Now we can run the main.tf file by running these commands.
 
@@ -205,13 +205,13 @@ Name = \"kub1-master\"
 >
 > terraform apply
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image13.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image13.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image14.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image14.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image15.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image15.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image16.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image16.png)
 
 -   Our instances have been created.
 
