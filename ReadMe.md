@@ -116,9 +116,9 @@ sudo apt update -y
 
 sudo apt-get install terraform -y
 
-![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image7.png)
+![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image7.PNG)
 
-![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image8.png)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image8.PNG)
 
 -   We will run this file to install terraform.
 
