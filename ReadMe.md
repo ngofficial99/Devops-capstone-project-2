@@ -56,9 +56,9 @@ machines using configuration management.
 -   Worker3: Java, Docker, Kubernetes
 
 -   Worker4: Docker, Kubernetes.\
-    ![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image1.jpg){width="6.267716535433071in"
+    ![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image1.JPG){width="6.267716535433071in"
     height="5.416666666666667in"}\
-    ![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image2.jpg){width="6.267716535433071in"
+    ![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image2.JPG){width="6.267716535433071in"
     height="6.319444444444445in"}
 
 Solution:
@@ -68,7 +68,7 @@ Solution:
 
 -   Login to AWS and create a Ubuntu instance.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image3.png){width="6.267716535433071in"
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image3.PNG){width="6.267716535433071in"
 height="2.986111111111111in"}
 
 -   Create and logon to this instance inside this we will be installing
@@ -346,7 +346,7 @@ https://raw.githubusercontent.com/projectcalico/calico/v3.24.1/manifests/calico.
 
 \# Validate: kubectl get nodes
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image26.png){width="6.267716535433071in"
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image26.PNG){width="6.267716535433071in"
 height="2.5694444444444446in"}
 
 ![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image27.png){width="6.267716535433071in"
@@ -403,7 +403,7 @@ sudo apt-get update
 
 sudo apt-get install jenkins -y
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image33.png){width="6.267716535433071in"
+![](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image33.png){width="6.267716535433071in"
 height="1.9444444444444444in"}
 
 -   After Jenkins is installed we will open Jenkins using the public
