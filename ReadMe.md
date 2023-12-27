@@ -56,7 +56,7 @@ machines using configuration management.
 -   Worker3: Java, Docker, Kubernetes
 
 -   Worker4: Docker, Kubernetes.\
-    ![img1](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image1.JPG)
+    ![img1](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image1.jpg)
     ![img2](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image2.jpg)
 
 Solution:
@@ -66,7 +66,7 @@ Solution:
 
 -   Login to AWS and create a Ubuntu instance.
 
-![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image3.PNG)
+![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image3.png)
 
 -   Create and logon to this instance inside this we will be installing
     terraform.
@@ -116,9 +116,9 @@ sudo apt update -y
 
 sudo apt-get install terraform -y
 
-![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image7.PNG)
+![img](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image7.png)
 
-![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image8.PNG)
+![img](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image8.png)
 
 -   We will run this file to install terraform.
 
@@ -319,7 +319,7 @@ https://raw.githubusercontent.com/projectcalico/calico/v3.24.1/manifests/calico.
 
 \# Validate: kubectl get nodes
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image26.PNG)
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image26.png)
 
 ![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image27.png)
 
