@@ -66,14 +66,12 @@ Solution:
 
 -   Login to AWS and create a Ubuntu instance.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image3.PNG){width="6.267716535433071in"
-height="2.986111111111111in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image3.PNG)
 
 -   Create and logon to this instance inside this we will be installing
     terraform.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image4.png){width="6.267716535433071in"
-height="2.75in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image4.png)
 
 -   Run the following command to create a Terraform script file.
 
@@ -86,11 +84,9 @@ run it
 
 vi terra_install.sh
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image5.png){width="6.267716535433071in"
-height="1.9305555555555556in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image5.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image6.png){width="6.267716535433071in"
-height="2.75in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image6.png)
 
 -   Add the following script.
 
@@ -120,21 +116,16 @@ sudo apt update -y
 
 sudo apt-get install terraform -y
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image7.png){width="6.267716535433071in"
-height="2.611111111111111in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image7.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image8.png){width="6.267716535433071in"
-height="2.0416666666666665in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image8.png)
 
 -   We will run this file to install terraform.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image9.png){width="6.267716535433071in"
-height="1.2361111111111112in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image9.png)
 -   Let\'s wait for this to install.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image10.png){width="6.267716535433071in"
-height="2.736111111111111in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image10.png)
 
 -   Now we will write a tf file to generate the ec2 machines for our k8s
     master and slaves.
@@ -197,14 +188,12 @@ Name = \"kub1-master\"
 
 }
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image11.png){width="6.267716535433071in"
-height="2.6944444444444446in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image11.png)
 
 -   We will attach a role to the controller ec2 instance with the
     permission of power user.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image12.png){width="6.267716535433071in"
-height="2.611111111111111in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image12.png)
 
 -   Now we can run the main.tf file by running these commands.
 
@@ -216,36 +205,28 @@ height="2.611111111111111in"}
 >
 > terraform apply
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image13.png){width="6.267716535433071in"
-height="2.1944444444444446in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image13.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image14.png){width="6.267716535433071in"
-height="1.2222222222222223in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image14.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image15.png){width="6.267716535433071in"
-height="1.0972222222222223in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image15.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image16.png){width="6.267716535433071in"
-height="2.6944444444444446in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image16.png)
 
 -   Our instances have been created.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image17.png){width="6.267716535433071in"
-height="2.3333333333333335in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image17.png)
 
 -   Now we will be installing kubernetes in the master and the slave
     instances.
 
 -   Connect to all 3 instances.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image18.png){width="6.267716535433071in"
-height="2.625in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image18.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image19.png){width="6.267716535433071in"
-height="2.75in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image19.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image20.png){width="6.267716535433071in"
-height="2.9583333333333335in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image20.png)
 
 -   We will make the kubectl installation in the all the clusters create
     a file called kube_install.sh
@@ -300,21 +281,16 @@ kubelet \--version
 
 kubectl version \--client
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image21.png){width="6.267716535433071in"
-height="2.8333333333333335in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image21.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image22.png){width="6.267716535433071in"
-height="2.75in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image22.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image23.png){width="6.267716535433071in"
-height="2.7083333333333335in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image23.png)
 -   Run the sh file by running in all the nodes.
 
     -   Sudo bash kube_install.sh
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image24.png){width="6.267716535433071in"
-height="2.625in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image24.png)
 
 -   Now we will go inside the master node and initialise the kubernetes
     master node.
@@ -332,8 +308,7 @@ sudo cp -i /etc/kubernetes/admin.conf \$HOME/.kube/config
 
 sudo chown \$(id -u):\$(id -g) \$HOME/.kube/config
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image25.png){width="6.267716535433071in"
-height="1.4583333333333333in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image25.png)
 
 -   Now we need to install the network driver Calico.
 
@@ -344,11 +319,9 @@ https://raw.githubusercontent.com/projectcalico/calico/v3.24.1/manifests/calico.
 
 \# Validate: kubectl get nodes
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image26.PNG){width="6.267716535433071in"
-height="2.5694444444444446in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image26.PNG)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image27.png){width="6.267716535433071in"
-height="1.3055555555555556in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image27.png)
 
 -   Now to connect the slave nodes to the master node we will generate
     the token.
@@ -357,29 +330,23 @@ height="1.3055555555555556in"}
 
     -   kubeadm token create \--print-join-command
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image28.png){width="6.267716535433071in"
-height="0.875in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image28.png)
 
 -   Now we will go to the slave nodes and run this token, so copy this
     token and open the slave nodes.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image29.png){width="6.267716535433071in"
-height="0.6111111111111112in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image29.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image30.png){width="6.267716535433071in"
-height="1.8055555555555556in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image30.png)
 
 -   Do the same on the second node.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image31.png){width="6.267716535433071in"
-height="1.7916666666666667in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image31.png)
 
 -   We can verify that the cluster is set by running kubectl get nodes
     command in the master branch.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image32.png){width="6.267716535433071in"
-height="1.8611111111111112in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image32.png)
 -   Now we need to install Jenkins in the controller.
 
 -   Run the following commands in the controller to install jenkins.
@@ -401,61 +368,47 @@ sudo apt-get update
 
 sudo apt-get install jenkins -y
 
-![](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image33.png){width="6.267716535433071in"
-height="1.9444444444444444in"}
-
+![](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image33.png)
 -   After Jenkins is installed we will open Jenkins using the public
     port.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image34.png){width="6.267716535433071in"
-height="3.1527777777777777in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image34.png)
 
 -   Setup Jenkins
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image35.png){width="6.267716535433071in"
-height="0.9861111111111112in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image35.png)
 
 -   Install the suggested plugins.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image36.png){width="6.267716535433071in"
-height="3.138888888888889in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image36.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image37.png){width="6.267716535433071in"
-height="2.986111111111111in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image37.png)
 
 -   Before we proceed ahead make sure that your Gitwork flow is ready
     with the Dockerfile is ready.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image38.png){width="6.267716535433071in"
-height="2.9166666666666665in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image38.png)
 
 -   And the docker file will be as follows.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image39.png){width="6.267716535433071in"
-height="1.7916666666666667in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image39.png)
 
 -   Now We will create a pipeline project.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image40.png){width="6.267716535433071in"
-height="3.0277777777777777in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image40.png)
 
 -   Select the project type as a github project and add the repository
     link.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image41.png){width="6.267716535433071in"
-height="3.138888888888889in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image41.png)
 
 -   In build triggers we need to specify build periodically for 25th day
     of every month
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image42.png){width="6.267716535433071in"
-height="2.611111111111111in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image42.png)
 -   We will also select GithubSCM polling.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image43.png){width="6.267716535433071in"
-height="1.4027777777777777in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image43.png)
 -   In the pipeline script we will add the following script.
 
 pipeline{
@@ -546,81 +499,63 @@ sh \'kubectl apply -f svc.yml\'
 
 }
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image44.png){width="6.267716535433071in"
-height="3.0277777777777777in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image44.png)
 -   Save and exit.
 
 -   Setup the dockerhub credentials in the global credentials.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image45.png){width="6.267716535433071in"
-height="2.2916666666666665in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image45.png)
 -   Now before we proceed we need to add the Kube-master as a jenkins
     node.
 
 -   Go to manage jenkins and then nodes.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image46.png){width="6.267716535433071in"
-height="2.638888888888889in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image46.png)
 -   Click on New node.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image47.png){width="6.267716535433071in"
-height="2.513888888888889in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image47.png)
 
 -   Select permanent agent and click on create.
 
 -   Add the host and the credentials pem file
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image48.png){width="6.267716535433071in"
-height="2.9305555555555554in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image48.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image49.png){width="6.267716535433071in"
-height="2.9305555555555554in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image49.png)
 
 -   Click on save.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image50.png){width="6.267716535433071in"
-height="2.1527777777777777in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image50.png)
 
 -   Once the node has been added we will try to start the build.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image51.png){width="6.267716535433071in"
-height="2.9722222222222223in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image51.png)
 
 -   Now we can go to the public IP of the Kubernetes cluster and the
     post 30008 to see the web page.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image52.png){width="6.267716535433071in"
-height="3.1527777777777777in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image52.png)
 
 -   Finally we need to set the webhook so the build can take place every
     time there is a commit.
 
 -   Go to the github repository and the repository settings.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image53.png){width="6.267716535433071in"
-height="2.986111111111111in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image53.png)
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image54.png){width="6.267716535433071in"
-height="2.9444444444444446in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image54.png)
 
 -   Click on add webhooks
 
 -   Create a jenkins user api token
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image55.png){width="6.267716535433071in"
-height="2.9166666666666665in"}
-
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image55.png)
 -   Configure the webhook.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image56.png){width="6.267716535433071in"
-height="2.9583333333333335in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image56.png)
 
 -   Webhook has been finally done.
 
-![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image57.png){width="6.267716535433071in"
-height="2.9305555555555554in"}
+![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image57.png)
 
 We have successfully completed the entire infrastructure.
