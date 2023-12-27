@@ -56,9 +56,9 @@ machines using configuration management.
 -   Worker3: Java, Docker, Kubernetes
 
 -   Worker4: Docker, Kubernetes.\
-    ![](vhttps://github.com/ngofficial99/Devops-capstone-project-2/tree/main/vertopal_6af5f4350c9342cfa05be10f8cca60dd/mediaimage1.JPG){width="6.267716535433071in"
+    ![](./vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image1.JPG){width="6.267716535433071in"
     height="5.416666666666667in"}\
-    ![](vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image2.JPG){width="6.267716535433071in"
+    ![](https://github.com/ngofficial99/Devops-capstone-project-2/vertopal_6af5f4350c9342cfa05be10f8cca60dd/media/image2.JPG){width="6.267716535433071in"
     height="6.319444444444445in"}
 
 Solution:
